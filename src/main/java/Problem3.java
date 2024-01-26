@@ -11,9 +11,11 @@ public class Problem3 {
 
         for (int i = 0; i < data.length - 1; i++) // get the first element
         {
+            check = 0;
             for (int t = 0; t < nonUnique.length; t++) {
                 if (data[i] == nonUnique[t]) {
                     check = 1;
+                    break;
                 }
             }
             if (check == 0) {
